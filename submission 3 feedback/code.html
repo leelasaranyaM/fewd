@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            background-color: #eef2f3; 
+            margin: 0; 
+            padding: 0; 
+        }
+        h2 {
+            color: #333;
+            margin-top: 20px;
+        }
+        form { 
+            margin: 50px auto; 
+            width: 400px; 
+            padding: 25px; 
+            background: white; 
+            border-radius: 10px; 
+            box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+        }
+        label { 
+            display: block; 
+            margin: 12px 0 5px; 
+            font-weight: bold; 
+            color: #555;
+            text-align: left;
+        }
+        input, textarea, select { 
+            width: 100%; 
+            padding: 10px; 
+            margin-bottom: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 6px; 
+            font-size: 14px;
+        }
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #008cba;
+            box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+        }
+        input[type="submit"] { 
+            background: #008cba; 
+            color: white; 
+            border: none; 
+            cursor: pointer; 
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover { 
+            background: #005f73; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form>
+        <label for="name">Name (optional):</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        
+        <label for="email">Email (optional):</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+        
+        <label for="rating">Rating:</label>
+        <select name="rating" id="rating">
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        
+        <label for="questions">Any Questions regarding product or service:</label>
+        <textarea name="questions" id="questions" rows="4" placeholder="Enter your questions..."></textarea>
+        
+        <label for="comments">Additional Comments (optional):</label>
+        <textarea name="comments" id="comments" rows="4" placeholder="Enter additional comments..."></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
