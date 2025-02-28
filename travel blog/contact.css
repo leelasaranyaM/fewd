@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #E74C3C;
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+    line-height: 1.6;
+}
+
+.navbar {
+    padding: 1rem;
+    background-color: rgba(44, 62, 80, 0.95) !important;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: white !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+.container {
+    margin-top: 40pxpx;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 80px;
+        padding: 0 20px;
+    }
+}
