@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="home-header">Welcome to E-Shop!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" id="nav-home">Home</a></li>
+            <li><a href="about.html" id="nav-about">About Us</a></li>
+            <li><a href="products.html" id="nav-products">Products</a></li>
+            <li><a href="partners.html" id="nav-partners">Partners</a></li>
+            <li><a href="contact.html" id="nav-contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Welcome to our e-commerce platform. Explore our products and services.</p>
+    </main>
+    <footer>
+        <p id="footer-text">&copy; 2025 E-Shop. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.assert(document.title === "Home - E-Commerce", "Page title is incorrect");
+            console.assert(document.getElementById("home-header").innerText === "Welcome to E-Shop!", "Header text is incorrect");
+            console.assert(document.getElementById("nav-home").innerText === "Home", "Home link text incorrect");
+            console.assert(document.getElementById("nav-about").innerText === "About Us", "About Us link text incorrect");
+            console.assert(document.getElementById("nav-products").innerText === "Products", "Products link text incorrect");
+            console.assert(document.getElementById("nav-partners").innerText === "Partners", "Partners link text incorrect");
+            console.assert(document.getElementById("nav-contact").innerText === "Contact Us", "Contact Us link text incorrect");
+            console.assert(document.getElementById("footer-text").innerText === "© 2025 E-Shop. All rights reserved.", "Footer text incorrect");
+        });
+    </script>
+</body>
+</html>
+
+
